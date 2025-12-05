@@ -124,7 +124,8 @@ def main():
         y_train = y_train[indices]
         
         # reduce size for faster testing
-        num_samples_red = num_samples 
+        num_samples_red = num_samples // 30
+        
         x_train_reduced = x_train[:num_samples_red]
         y_train_reduced = y_train[:num_samples_red]
 
